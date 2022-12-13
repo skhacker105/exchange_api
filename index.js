@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(upload.array()); 
 app.use(express.static('public'));
 
-app.use('/users', apiConnections);
+app.use('/connection', apiConnections);
 
 app.get('/', function (req, res) {
    res.send('Exchange API Working');
